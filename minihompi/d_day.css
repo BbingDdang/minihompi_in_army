@@ -1,0 +1,40 @@
+.date {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+
+    height: 10rem;
+    margin: -50px 0 0 -50px;
+}
+
+#bye_army {
+    
+    color: #343a40;
+    text-align: center;
+    font-size: 100px;
+}
+
+.date_font {
+    display: inline;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 2rem;
+}
+
+#date_string {
+    text-align: center;
+}
+
+#date_exit {
+    text-align: center;
+    color: gray;
+}
+
+#D {
+    color: red;
+}
+
+@media screen and (max-width : 768px){
+    .date {
+        left: 35%;
+    }
+}

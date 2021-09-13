@@ -1,0 +1,45 @@
+.samsung #device_logo {
+    height: 170px;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.samsung img {
+    width: 400px;
+}
+
+.samsung {
+    height: 270px;
+    margin-top: 18%;
+}
+
+.apple #device_logo{
+    text-align: center;
+    
+}
+
+.apple img {
+    height: 270px;
+    width: 400px;
+}
+
+#Device.menu {
+    flex-flow: column wrap;
+}
+
+@media screen and (max-width : 768px) {
+    .samsung img {
+        width: 200px;
+    }
+    .apple img {
+        width: 200px;
+        height: 140px;
+    }
+    .samsung {
+        margin-top: 15%;
+    }
+    
+
+
+}

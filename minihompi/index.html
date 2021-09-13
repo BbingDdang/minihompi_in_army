@@ -1,0 +1,151 @@
+<!-- 시발 script defer 꼭 기억하자.. -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minihompi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="button.js" defer></script>
+    <script src="https://kit.fontawesome.com/a1bb26aa3c.js" crossorigin="anonymous" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="d_day.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="device.css">
+    
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="main_logo">
+            <button class="widgetBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <span>BbingDdang</span>
+        </div>
+    </header>
+
+    <nav class="navbar1" style="float: left;">
+        <ul class="navbar1__menu">
+            <li id="li_home" onclick="openMenu('Home')"><a href="#0"><i class="fas fa-home"></i></a></li>
+            <li onclick="openMenu('Game')"><a href="#1"><i class="fas fa-gamepad"></i></a></li>
+            <li onclick="openMenu('Device')"><a href="#2"><i class="fas fa-tablet-alt"></i></a></li>
+            <li onclick="openMenu('Calendal')"><a href="#3"><i class="far fa-calendar-alt"></i></a></li>
+            <li onclick="openMenu('Dday'), getTime()"><a href="#4"><i class="fas fa-running"></i></a></li>
+            <li class="float_bottom" onclick="openMenu('Setting')"><a href="#set"><i class="fas fa-cog"></i></a></li>
+        </ul>
+    </nav>
+
+    <span class="Bigmenu">
+        <div id="Home" class="menu">
+            <div id="welcome"><span id="inline">BbingDdang</span>'s minihompi!</div>
+        </div>
+        <div id="Game" class="menu">
+            <div class="card">
+                <div id="game_icon">
+                    <img src="http://cafefiles.naver.net/MjAxOTA4MjJfODAg/MDAxNTY2NDQ5MTg2NTU1.k6kV3dHXcKEuxHUcsOUmMfneLqKcRJldUomr3E9j7fIg.5EI5D2-LFKIs8j9HRjIS8XFS0X4JrzPB3vKVArOWdQkg.PNG/%B8%DE%C0%CC%C7%C3_%BE%C6%C0%CC%C4%DC.png" alt="" style="width: 50px;">
+                </div>
+                <div id="game_name">
+                    MapleStory
+                </div>
+            </div>
+            <div class="card">
+                <div id="game_icon">
+                    <img src="https://cdn.apexer.gg/images/family/symbol-apexlegends@2x.png" alt="" style="width: 50px;">
+                </div>
+                <div id="game_name">
+                    Apex Legend
+                </div>
+            </div>
+            <div class="card">
+                <div id="game_icon">
+                    <img src="https://cdn.apexer.gg/images/family/logo-valorant.svg" alt="" style="width: 50px;">
+                </div>
+                <div id="game_name">
+                    Valorant
+                </div>
+            </div>
+            <div class="card">
+                <div id="game_icon">
+                    <img src="http://blogfiles.naver.net/20140716_229/ars2886_1405501976304Unm2w_PNG/%B7%CE%B5%F9%C6%E4%C0%CC%C1%F6.png" alt="" style="width: 50px;">
+                </div>
+                <div id="game_name">
+                    LoL
+                </div>
+            </div>
+            <div class="card">
+                <div id="game_icon">
+                    <img src="https://logodownload.org/wp-content/uploads/2019/12/pubg-logo-1.png" alt="" style="width: 50px;">
+                </div>
+                <div id="game_name">
+                    PUBG
+                </div>
+            </div>
+            <div class="card">
+                <div id="game_icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Overwatch_circle_logo.svg/600px-Overwatch_circle_logo.svg.png" alt="" style="width: 50px;">
+                </div>
+                <div id="game_name">
+                    Overwatch
+                </div>
+            </div>
+            <div class="card">
+                <div id="game_icon">
+                    <img src="https://www.esportspedia.com/tft/images/0/00/Tft_logo.png" alt="" style="width: 50px;">
+                </div>
+                <div id="game_name">
+                    TFT
+                </div>
+            </div>
+            
+        </div>
+        <div id="Device" class="menu">
+            <div class="samsung">
+                <div id="device_logo">
+                    <img class ="img" id="galaxy" onclick="openDevice()" src="http://blogfiles.naver.net/MjAxNzA3MDdfMTcy/MDAxNDk5NDI0MzM2NTQz.VtiNkoa2KINBAuq1qs6uSI31QhqK1kuYHHrZ6ledFjog.Dg6PyraR92XbZKX4-1wGvliGZekjqlDHgxaA2qPoTywg.PNG.bgpoilkj/Samsung_Galaxy_logo.svg.png" alt="">
+                </div>
+            </div>
+            <div class="apple">
+                <div id="device_logo">
+                    <img class="img" id="mac" onclick="openDevice()" src="https://i0.wp.com/phongalaxy.com/wp-content/uploads/2020/04/Apple-Logo-1-removebg-preview-e1586795952696.png?fit=450%2C300&ssl=1" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="Calendal" class="menu">
+            <div class="wrapper">
+                <div id="calendari"></div>
+                
+            </div>
+        </div>
+        <div id="Dday" class="menu">
+            <div class="date">
+                <div id="bye_army"><i class="fas fa-running"></i></div>
+                <div class="date_font">
+                    <div id="date_string">전역까지</div>
+                    <span id="D">D -</span>
+                    <span id="counter1"></span><span class="date_font"> :</span>
+                    <span id="counter2"></span><span class="date_font"> :</span>
+                    <span id="counter3"></span><span class="date_font"> :</span>
+                    <span id = "counter4"></span>
+                    <div id="date_exit">2020/09/26</div>
+                </div>
+            </div>
+        </div>
+        <div id="Setting" class="menu">
+            Setting
+        </div>
+    </span>
+    
+    <!--<footer>
+        <div class="footer">
+            <div>BbingDdang's First Project</div>
+        </div>
+    </footer>-->
+</body>
+</html>

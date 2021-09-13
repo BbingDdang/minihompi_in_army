@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+:root {
+    --text-color : whitesmoke;
+    --background-color : #faa2c1;
+    --accent-color : #343a40;
+    --hover-color : #966174;
+    --menu-color : #dc8faa;
+}
+
+/* header */
+
+header {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    
+    width: 100%;
+    
+}
+
+.main_logo {
+    display: block;
+}
+
+.main_logo span{
+    padding: 1rem;
+    padding-left: 1rem;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 25px;
+}
+
+.main_logo button{
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 25px;
+    padding: 1rem;
+}
+
+.main_logo button:hover {
+    background-color: #f06595;
+    border-radius: 4px;
+    border: none;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+/* navbar  (navbar1부터 그밑 하위 자식들 width,height, display, margin
+padding 싹ㄷ ㅏ다시 settings
+Key is float! */
+
+.navbar1 {
+    display: inline-block;
+    height: 94vh;
+    background-color: var(--menu-color);
+    position: relative;
+    
+    
+    
+}
+
+.navbar1__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    
+    
+
+}
+
+li {
+    text-align: center;
+    
+    background-color: #dc8faa;
+}
+
+li.float_bottom {
+    position: absolute ;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    /* ... */
+}
+
+
+.navbar1__menu a {
+    display: inline-block;
+    padding : 1rem;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+    
+    
+        
+}
+.navbar1__menu li:hover {
+    background-color: var(--hover-color);
+    border-radius: 4px;
+}
+
+
+
+.navbar1__menu.active {
+    display: block;
+    
+    
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.Bigmenu {
+    visibility: hidden;
+    
+}
+
+@media screen and (max-width : 768px) {
+    .navbar1 {
+        height: 90vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* section > article */
+
+
+
+
+
+
+/* footer 
+
+.footer {
+    background-color: #f06595;
+    color: gray;
+    
+    
+    text-align: center;
+    padding: 8px;
+    font-size: 15px;
+}
+
+footer {
+    
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    
+    
+}*/
